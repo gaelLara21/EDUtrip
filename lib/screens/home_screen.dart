@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
+import 'carrusel/carrusel.dart';
+
 class HomeLog extends StatefulWidget {
   const HomeLog({super.key});
 
@@ -12,7 +14,7 @@ class _HomeLogState extends State<HomeLog> {
   int _currentIndex = 0;
 
   final screens = [
-    const Center(child: Text('Home', style: TextStyle(fontSize: 45))),
+    const Carrusel(),
     const Center(child: Text('Test', style: TextStyle(fontSize: 45))),
     const Center(child: Text('Blog', style: TextStyle(fontSize: 45))),
     const Center(child: Text('Busqueda', style: TextStyle(fontSize: 45))),
@@ -40,6 +42,8 @@ class _HomeLogState extends State<HomeLog> {
         margin: const EdgeInsets.only(bottom: 10),
         child: GNav(
             selectedIndex: _currentIndex,
+            tabBorderRadius: 10,
+            padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
             onTabChange: (index) => {setState(() => _currentIndex = index)},
             tabs: const [
               GButton(
