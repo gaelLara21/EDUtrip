@@ -21,7 +21,7 @@ class _QuizState extends State<Quiz> {
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
-        child:
+        child: //Hola
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           const Text(
             "Pon a prueba tus habilidades",
