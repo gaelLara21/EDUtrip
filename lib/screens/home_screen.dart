@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 import 'carrusel/carrusel.dart';
+import 'quiz/quiz_screen.dart';
 
 class HomeLog extends StatefulWidget {
   const HomeLog({super.key});
@@ -15,7 +16,7 @@ class _HomeLogState extends State<HomeLog> {
 
   final screens = [
     const Carrusel(),
-    const Center(child: Text('Test', style: TextStyle(fontSize: 45))),
+    const Quiz(),
     const Center(child: Text('Blog', style: TextStyle(fontSize: 45))),
     const Center(child: Text('Busqueda', style: TextStyle(fontSize: 45))),
   ];
