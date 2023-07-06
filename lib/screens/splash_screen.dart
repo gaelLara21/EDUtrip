@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:edu_trip/screens/chemistry.dart';
+import 'package:edu_trip/screens/auth/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
               ..duration = Duration(milliseconds: 10000)
               ..forward().then((value) {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ChemistryScreen()));
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
               });
           }),
         ],
